@@ -1,0 +1,1292 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ee="http://schemas.microsoft.com/expression/2010/effects" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:CsStMT" mc:Ignorable="d" x:Name="MainWindow1" x:Class="CsStMT.MainWindow"
+        Title="MainWindow" Height="580" AllowsTransparency="True" WindowStyle="None" KeyDown="Window_KeyDown" Background="{x:Null}" Width="636" Visibility="Visible" ResizeMode="CanMinimize" Topmost="True">
+    <Window.Resources>
+        <Storyboard x:Key="OnLoaded1"/>
+        <Storyboard x:Key="Parts1boundStoryBoard">
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Image1">
+        		<SplineDoubleKeyFrame KeyTime="0:0:0.8" Value="0.1"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="20.717">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut" Bounces="5" Bounciness="3"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Image1">
+        		<SplineDoubleKeyFrame KeyTime="0:0:0.8" Value="45"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="-42.167">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut" Bounces="5" Bounciness="3"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.033">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="35.818">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="42.75">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="-63.334">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="42.75">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="-62.334">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image_Copy">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0.092"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="45.66"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image_Copy">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="28.385"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-25.651"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image_Copy">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="49.164"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-44.429"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Viewbox.Stretch)" Storyboard.TargetName="Image1">
+        		<DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Stretch.Fill}"/>
+        		<DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="{x:Static Stretch.Fill}"/>
+        	</ObjectAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="Image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="0.733"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="-3.333"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="image">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="5"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="image_Copy">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="3"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="Image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="6"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="image_Copy1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="4"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image_Copy1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="23.541">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<PowerEase EasingMode="EaseInOut" Power="3"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image_Copy1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-14.994">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<PowerEase EasingMode="EaseInOut" Power="3"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-38.324">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<PowerEase EasingMode="EaseInOut" Power="3"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image_Copy1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-9.085">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<PowerEase EasingMode="EaseInOut" Power="3"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-24.031">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<PowerEase EasingMode="EaseInOut" Power="3"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image_Copy1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.715">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<PowerEase EasingMode="EaseInOut" Power="3"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="image_Copy2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="6"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image_Copy2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-23.169">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image_Copy2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="19.373">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="55.622">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image_Copy2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="5.135">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="20.78">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="P2image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="5"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="P2image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-22.798">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseIn"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="P2image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="23.581">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseIn"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="P2image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="43.862">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseIn"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="P2image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="4"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="P2image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="23.152"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="P2image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-32.026"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="P2image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="30.615"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="P2image3">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="8"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="P2image3">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-18.106">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseIn"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="-55.213">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseIn"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="P2image3">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="7.906">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseIn"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="22.813">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseIn"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="P2image3">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="-14.112">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseIn"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0.896">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="124.397">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0.051">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="-60.864">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-0.009">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="10.115">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="P3_image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="41.192"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="P3_image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="-22.605"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="P3_image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="-59.114"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="P3_image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="40.831"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="P3_image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="52.012"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="P3_image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="-29.403"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="P3_image3">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="-23.285"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="P3_image3">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.435"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="P3_image3">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="55.712"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="P4_image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="35.839">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuinticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="P4_image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="72.749">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuinticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="P4_image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="11.664">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuinticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="P4_image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="93.775">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuarticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="P4_image2">
+        		<EasingThicknessKeyFrame KeyTime="0:0:1" Value="69.922,226.806,0,0"/>
+        	</ThicknessAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="P4_image3">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="16.308"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="180.75"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="P4_image3">
+        		<EasingThicknessKeyFrame KeyTime="0:0:1" Value="331.522,334.548,0,0"/>
+        		<EasingThicknessKeyFrame KeyTime="0:0:2" Value="398.524,299.983,0,0"/>
+        	</ThicknessAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="P5_image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0.795"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="22.697"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="P5_image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-4.762"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="-62.877"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="P5_image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="2.512"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="33.17"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="P5_image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="2.392">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuarticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="32.008"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="P5_image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="4.68">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuarticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="104.256"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="P5_image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="-1.353">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuarticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="-30.155"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="P5_image3">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-1.006">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuinticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="-10.029">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuinticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="P5_image3">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.01">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuinticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="16.632">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuinticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="P5_image3">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.035">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuinticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="56.283">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuinticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="P6_image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="1.164">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3.5" Value="19.986">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="P6_image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="-2.929">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3.5" Value="-28.399">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="P6_image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="5.795">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3.5" Value="56.189">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="P6_image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="1.114">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="13.776">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="P6_image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.338">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="37.89">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="P6_image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.482">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="-53.942">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BounceEase EasingMode="EaseOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="P6_image3">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="0.699">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BackEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2.6" Value="8.902">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BackEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="P6_image3">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="1.645">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BackEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2.6" Value="-43.245">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BackEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="P6_image3">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="0.309">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BackEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2.6" Value="-8.138">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<BackEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="P7_image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1281.822">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<ExponentialEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="2093.974"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="P7_image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-41.624">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<ExponentialEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="-67.976"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="P7_image1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="48.801">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<ExponentialEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="79.697"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="P7_image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.1"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="P7_image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="23.777"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="663.344"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="P7_image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.768"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="2.876"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="P7_image2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-8.815"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="-32.992"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="P7_image3">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="34.99"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1043.302"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="P7_image3">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-0.405"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-12.411"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="P7_image3">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-1.651"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-50.616"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="P7_image4">
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="19.532">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuarticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:4" Value="1198.57">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuarticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="P7_image4">
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.411">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuarticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:4" Value="24.009">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuarticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="P7_image4">
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.941">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuarticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:4" Value="54.963">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuarticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="P7_image5">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="85.692">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<ElasticEase EasingMode="EaseIn"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="1260.814">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<ElasticEase EasingMode="EaseIn"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="P7_image5">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="4.192">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<ElasticEase EasingMode="EaseIn"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="62.357">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<ElasticEase EasingMode="EaseIn"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="P7_image5">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.599">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<ElasticEase EasingMode="EaseIn"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="8.912">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<ElasticEase EasingMode="EaseIn"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="P7_image6">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="38.669">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<CircleEase EasingMode="EaseIn"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3.5" Value="1444.038">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<CircleEase EasingMode="EaseIn"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="P7_image6">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="-1.562">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<CircleEase EasingMode="EaseIn"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3.5" Value="-59.838">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<CircleEase EasingMode="EaseIn"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="P7_image6">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="-1.052">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<CircleEase EasingMode="EaseIn"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3.5" Value="-40.314">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<CircleEase EasingMode="EaseIn"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="image2">
+        		<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+        		<DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Hidden}"/>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="PartsGrid1">
+        		<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="PartsGrid2">
+        		<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="PartsGrid3">
+        		<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="PartsGrid8">
+        		<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="PartsGrid4">
+        		<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="PartsGrid5">
+        		<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="PartsGrid6">
+        		<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="PartsGrid7">
+        		<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+        	</ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="RingFillStoryBoard">
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(ed:Arc.EndAngle)" Storyboard.TargetName="arc">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="360"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="360"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(ed:Arc.EndAngle)" Storyboard.TargetName="arc1">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="360"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="360"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="arc1">
+        		<EasingColorKeyFrame KeyTime="0:0:3" Value="#FFFFAE00"/>
+        		<EasingColorKeyFrame KeyTime="0:0:3.5" Value="#FFFFC344"/>
+        		<EasingColorKeyFrame KeyTime="0:0:4" Value="sc#1, 1, 0.423267663, 0"/>
+        	</ColorAnimationUsingKeyFrames>
+        	<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="arc">
+        		<EasingColorKeyFrame KeyTime="0:0:3" Value="#FFFDD417"/>
+        		<EasingColorKeyFrame KeyTime="0:0:3.5" Value="#FFFFD92C"/>
+        		<EasingColorKeyFrame KeyTime="0:0:4" Value="sc#1, 0.9822506, 0.658374846, 0.008568126"/>
+        	</ColorAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image3">
+        		<EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.005"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="0.695"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(ed:Arc.StartAngle)" Storyboard.TargetName="arcCenter">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-360">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuinticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="MainLoopStoryBoard" AutoReverse="True" RepeatBehavior="Forever">
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Effect).(ee:BloomEffect.BaseIntensity)" Storyboard.TargetName="image1">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="1">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuinticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuinticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Effect).(ee:BloomEffect.BloomIntensity)" Storyboard.TargetName="grid">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0.1"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.5"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Effect).(ee:BloomEffect.BloomIntensity)" Storyboard.TargetName="image1">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="10">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuinticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="30">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuinticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="ConfiglationClickStoryboard">
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ConfiglationUI">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<Int32AnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.ZIndex)" Storyboard.TargetName="ConfiglationUI">
+        		<EasingInt32KeyFrame KeyTime="0:0:1" Value="0"/>
+        	</Int32AnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ConfiglationUI">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="6.25">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuinticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ConfiglationUI">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-2.5">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuinticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="ConfiglationUI">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="16.001">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuinticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="ConfiglationUI">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="14.522">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuinticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ConfigGrid">
+        		<SplineDoubleKeyFrame KeyTime="0:0:1" Value="1" KeySpline="1,0,0,0.71"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.FontSize)" Storyboard.TargetName="UserNameInputTextBox">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="14.667"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="14.667"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<Int32AnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.ZIndex)" Storyboard.TargetName="ConfigGrid">
+        		<EasingInt32KeyFrame KeyTime="0" Value="1"/>
+        		<EasingInt32KeyFrame KeyTime="0:0:1" Value="0"/>
+        	</Int32AnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="ConfigEndStoryBoard">
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ConfigGrid">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ConfiglationUI">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="ConfiglationUI">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="15.569"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ConfiglationUI">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="5.834"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="ConfiglationUI">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="14.118"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ConfiglationUI">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="-3.666"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<Int32AnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.ZIndex)" Storyboard.TargetName="ConfigGrid">
+        		<EasingInt32KeyFrame KeyTime="0" Value="0"/>
+        		<EasingInt32KeyFrame KeyTime="0:0:1" Value="-1"/>
+        	</Int32AnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="ButtonArrangeStoryBoard" RepeatBehavior="1x">
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="userControl1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="userControl1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1" Value="360">
+        			<EasingDoubleKeyFrame.EasingFunction>
+        				<QuinticEase EasingMode="EaseInOut"/>
+        			</EasingDoubleKeyFrame.EasingFunction>
+        		</EasingDoubleKeyFrame>
+        	</DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="MainLoopStoryBoardnotRev" RepeatBehavior="Forever">
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="userControl1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:30" Value="360"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="userControl1">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:30" Value="1"/>
+        	</DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <StopStoryboard BeginStoryboardName="RingFillStoryBoard_BeginStoryboard"/>
+            <BeginStoryboard x:Name="RingFillStoryBoard_BeginStoryboard" Storyboard="{StaticResource OnLoaded1}"/>
+            <BeginStoryboard x:Name="RingFillStoryBoard_BeginStoryboard1" Storyboard="{StaticResource RingFillStoryBoard}"/>
+            <BeginStoryboard x:Name="MainLoopStoryBoard_BeginStoryboard" Storyboard="{StaticResource MainLoopStoryBoard}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ConfigCancelButton">
+            <BeginStoryboard x:Name="ConfigEndStoryBoard_BeginStoryboard" Storyboard="{StaticResource ConfigEndStoryBoard}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded" SourceName="arc1"/>
+        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown" SourceName="configlationUserControl">
+            <BeginStoryboard x:Name="ConfiglationClickStoryboard_BeginStoryboard" Storyboard="{StaticResource ConfiglationClickStoryboard}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ConfigOKButton">
+            <BeginStoryboard x:Name="ConfigEndStoryBoard_BeginStoryboard1" Storyboard="{StaticResource ConfigEndStoryBoard}"/>
+        </EventTrigger>
+    </Window.Triggers>
+	<Grid x:Name="grid" Height="500" MouseDown="Grid_MouseDown" RenderTransformOrigin="0.5,0.5">
+		<i:Interaction.Triggers>
+			<i:EventTrigger>
+				<ei:PlaySoundAction Source="Music/buoon.mp3" Volume="1"/>
+			</i:EventTrigger>
+		</i:Interaction.Triggers>
+		<Grid.Effect>
+			<ee:BloomEffect BloomIntensity="0" BaseSaturation="1" BaseIntensity="1" BloomSaturation="1" Threshold="0"/>
+		</Grid.Effect>
+		<Grid HorizontalAlignment="Left" Height="500" VerticalAlignment="Top" Width="636">
+			<Grid.Effect>
+				<BlurEffect/>
+			</Grid.Effect>
+			<Grid x:Name="PartsGrid7" HorizontalAlignment="Left" Height="505" Margin="0,-5,0,0" VerticalAlignment="Top" Width="636" Visibility="Hidden">
+				<Grid.Effect>
+					<ee:ColorToneEffect DarkColor="#FF8CE225" LightColor="Black"/>
+				</Grid.Effect>
+				<Image x:Name="P7_image1" HorizontalAlignment="Left" Height="0.1" Margin="166.49,358.41,0,0" VerticalAlignment="Top" Width="46.33" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+					<Image.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleY="-1"/>
+							<SkewTransform/>
+							<RotateTransform Angle="-139.538"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Image.RenderTransform>
+				</Image>
+				<Image x:Name="P7_image2" HorizontalAlignment="Left" Height="0" Margin="260.853,123.177,0,0" VerticalAlignment="Top" Width="24.007" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+					<Image.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="-1"/>
+							<SkewTransform/>
+							<RotateTransform Angle="4.982"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Image.RenderTransform>
+				</Image>
+				<Image x:Name="P7_image3" HorizontalAlignment="Left" Height="0.1" Margin="208.665,120.464,0,0" VerticalAlignment="Top" Width="35.399" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+					<Image.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="-1"/>
+							<SkewTransform/>
+							<RotateTransform Angle="-13.777"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Image.RenderTransform>
+				</Image>
+			</Grid>
+			<Grid x:Name="PartsGrid6" HorizontalAlignment="Left" Height="505" Margin="0,-5,0,0" VerticalAlignment="Top" Width="636" Visibility="Hidden">
+				<Grid.Effect>
+					<BlurEffect/>
+				</Grid.Effect>
+				<Image x:Name="P6_image1" HorizontalAlignment="Left" Height="6" Margin="193.157,373.743,0,0" VerticalAlignment="Top" Width="46.33" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+					<Image.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleY="-1"/>
+							<SkewTransform/>
+							<RotateTransform Angle="-153.187"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Image.RenderTransform>
+				</Image>
+				<Image x:Name="P6_image2" HorizontalAlignment="Left" Height="10.319" Margin="318.338,154.924,0,0" VerticalAlignment="Top" Width="33.106" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+					<Image.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform Angle="35.085"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Image.RenderTransform>
+				</Image>
+				<Image x:Name="P6_image3" HorizontalAlignment="Left" Height="11.137" Margin="105.436,226.503,0,0" VerticalAlignment="Top" Width="28.908" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+					<Image.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="-1"/>
+							<SkewTransform/>
+							<RotateTransform Angle="-79.343"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Image.RenderTransform>
+				</Image>
+			</Grid>
+			<Grid x:Name="PartsGrid5" HorizontalAlignment="Left" Height="505" Margin="0,-5,0,0" VerticalAlignment="Top" Width="636" Visibility="Hidden">
+				<Image x:Name="P5_image1" HorizontalAlignment="Left" Height="6" Margin="117.823,314.41,0,0" VerticalAlignment="Top" Width="46.33" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+					<Image.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleY="-1"/>
+							<SkewTransform/>
+							<RotateTransform Angle="-117.813"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Image.RenderTransform>
+				</Image>
+				<Image x:Name="P5_image2" HorizontalAlignment="Left" Height="7" Margin="356.718,231.274,0,0" VerticalAlignment="Top" Width="33.106" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+					<Image.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform Angle="73.868"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Image.RenderTransform>
+				</Image>
+				<Image x:Name="P5_image3" HorizontalAlignment="Left" Height="13" Margin="268.528,373.093,0,0" VerticalAlignment="Top" Width="28.908" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+					<Image.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleY="-1" ScaleX="-1"/>
+							<SkewTransform/>
+							<RotateTransform Angle="-16.463"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Image.RenderTransform>
+				</Image>
+			</Grid>
+		</Grid>
+		<Grid x:Name="PartsGrid4" HorizontalAlignment="Left" Height="505" Margin="0,-5,0,0" VerticalAlignment="Top" Width="636" Visibility="Hidden">
+			<Image x:Name="P4_image1" HorizontalAlignment="Left" Height="4" Margin="372.733,278.741,0,0" VerticalAlignment="Top" Width="25" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleY="-1" ScaleX="-1"/>
+						<SkewTransform/>
+						<RotateTransform Angle="99.109"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+			<Image x:Name="P4_image2" HorizontalAlignment="Left" Height="12.35" Margin="110.385,263.02,0,0" VerticalAlignment="Top" Width="18.402" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleX="-1"/>
+						<SkewTransform/>
+						<RotateTransform Angle="-96.344"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+			<Image x:Name="P4_image3" HorizontalAlignment="Left" Height="15.032" Margin="331.002,334.816,0,0" VerticalAlignment="Top" Width="24.433" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleY="-1" ScaleX="-1"/>
+						<SkewTransform/>
+						<RotateTransform Angle="-54.577"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+		</Grid>
+		<Grid x:Name="PartsGrid8" HorizontalAlignment="Left" Height="505" Margin="0,-5,0,0" VerticalAlignment="Top" Width="636" Visibility="Hidden">
+			<Grid.Effect>
+				<BlurEffect/>
+			</Grid.Effect>
+			<Image x:Name="P7_image4" HorizontalAlignment="Left" Height="0.1" Margin="278.99,370.91,0,0" VerticalAlignment="Top" Width="46.33" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleY="-1"/>
+						<SkewTransform/>
+						<RotateTransform Angle="-203.597"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+			<Image x:Name="P7_image5" HorizontalAlignment="Left" Height="0.1" Margin="357.186,264.844,0,0" VerticalAlignment="Top" Width="24.007" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleX="-1"/>
+						<SkewTransform/>
+						<RotateTransform Angle="98.134"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+			<Image x:Name="P7_image6" HorizontalAlignment="Left" Height="0.1" Margin="120.498,183.964,0,0" VerticalAlignment="Top" Width="35.399" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleX="-1"/>
+						<SkewTransform/>
+						<RotateTransform Angle="-56.031"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+		</Grid>
+		<Grid x:Name="PartsGrid3" HorizontalAlignment="Left" Height="505" Margin="0,-5,0,0" VerticalAlignment="Top" Width="636" Visibility="Hidden">
+			<Image x:Name="P3_image1" HorizontalAlignment="Left" Height="3" Margin="191.566,139.908,0,0" VerticalAlignment="Top" Width="25" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleY="-1"/>
+						<SkewTransform/>
+						<RotateTransform Angle="-20.927"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+			<Image x:Name="P3_image2" HorizontalAlignment="Left" Height="3" Margin="345.897,187.501,0,0" VerticalAlignment="Top" Width="25" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="60.52"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+			<Image x:Name="P3_image3" HorizontalAlignment="Left" Height="5" Margin="235.466,378.732,0,0" VerticalAlignment="Top" Width="25" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleY="-1"/>
+						<SkewTransform/>
+						<RotateTransform Angle="0.447"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+		</Grid>
+		<Grid x:Name="PartsGrid2" HorizontalAlignment="Left" Height="505" Margin="0,-5,0,0" VerticalAlignment="Top" Width="636" Visibility="Hidden">
+			<Grid.Effect>
+				<ee:MonochromeEffect Color="#FFB27D10"/>
+			</Grid.Effect>
+			<Image x:Name="P2image1" HorizontalAlignment="Left" Height="0" Margin="309.899,373.575,0,0" VerticalAlignment="Top" Width="25" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleY="-1"/>
+						<SkewTransform/>
+						<RotateTransform Angle="-30"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+			<Image x:Name="P2image2" HorizontalAlignment="Left" Height="0" Margin="137.23,353.334,0,0" VerticalAlignment="Top" Width="25" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-133.71"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+			<Image x:Name="P2image3" HorizontalAlignment="Left" Height="0" Margin="293.841,118.232,0,0" VerticalAlignment="Top" Width="25" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleY="-1"/>
+						<SkewTransform/>
+						<RotateTransform Angle="-154.821"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+		</Grid>
+		<Grid x:Name="PartsGrid1" HorizontalAlignment="Left" Height="505" Margin="0,-5,0,0" VerticalAlignment="Top" Width="636" Visibility="Hidden">
+			<Grid.Effect>
+				<ee:BloomEffect BloomIntensity="-0.9" BaseSaturation="0.51" BaseIntensity="1" BloomSaturation="1.2" Threshold="0.5"/>
+			</Grid.Effect>
+			<Image x:Name="image_Copy" HorizontalAlignment="Left" Height="0" Margin="152.066,131.408,0,0" VerticalAlignment="Top" Width="25" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleY="-1"/>
+						<SkewTransform/>
+						<RotateTransform Angle="-30"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+			<Image x:Name="image_Copy1" HorizontalAlignment="Left" Height="0" Margin="104.23,191.834,0,0" VerticalAlignment="Top" Width="25" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform Angle="-62.431"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+			<Image x:Name="image_Copy2" HorizontalAlignment="Left" Height="0" Margin="367.966,336.732,0,0" VerticalAlignment="Top" Width="25" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleY="-1"/>
+						<SkewTransform/>
+						<RotateTransform Angle="-62.431"/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+		</Grid>
+		<Image x:Name="image" HorizontalAlignment="Left" Height="0" Margin="128,150.604,0,0" VerticalAlignment="Top" Width="25" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0.635">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-45"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+		</Image>
+		<Image x:Name="Image1" HorizontalAlignment="Left" Height="0" Margin="241,105,0,0" VerticalAlignment="Top" Width="25" Source="Image/ARiAParts/AriaParts1.png" MouseEnter="Image1_MouseEnter" RenderTransformOrigin="0.5,0.5" Opacity="0.415">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+		</Image>
+		<Image x:Name="image2" HorizontalAlignment="Left" Height="1" Margin="119,276.604,0,0" VerticalAlignment="Top" Width="25" Source="Image/ARiAParts/Ariaparts3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0.635" Visibility="Hidden">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-99.436"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+		</Image>
+		<ed:Arc ArcThickness="100" ArcThicknessUnit="Pixel" EndAngle="360" Fill="Black" HorizontalAlignment="Left" Height="169.667" Margin="164.333,164.333,0,0" Stretch="None" Stroke="Black" StartAngle="0" VerticalAlignment="Top" Width="172" Opacity="0.245"/>
+		<ed:Arc x:Name="arc1" ArcThickness="69" ArcThicknessUnit="Pixel" EndAngle="360" HorizontalAlignment="Left" Height="300" Margin="100,100,0,0" Stretch="None" Stroke="Black" StartAngle="0" VerticalAlignment="Top" Width="300" StrokeThickness="0" Fill="#FFFFAE00">
+			<ed:Arc.Effect>
+				<BlurEffect Radius="4" KernelType="Box"/>
+			</ed:Arc.Effect>
+		</ed:Arc>
+		<ed:Arc ArcThicknessUnit="Pixel" EndAngle="360" Fill="Black" HorizontalAlignment="Left" Height="179" Margin="161.166,160,0,0" Stretch="None" Stroke="Black" StartAngle="0" VerticalAlignment="Top" Width="178" StrokeThickness="0"/>
+		<ed:Arc x:Name="arc" ArcThickness="48" ArcThicknessUnit="Pixel" EndAngle="360" Fill="#FFFDD417" HorizontalAlignment="Left" Height="290" Margin="105,105,0,0" Stretch="None" Stroke="Black" StartAngle="0" VerticalAlignment="Top" Width="290"/>
+		<ed:Arc x:Name="arcCenter" ArcThickness="5" ArcThicknessUnit="Pixel" EndAngle="0" Fill="#FFFDD417" HorizontalAlignment="Left" Height="169.667" Margin="164.333,164.333,0,0" Stretch="None" Stroke="Black" VerticalAlignment="Top" Width="172"/>
+		<Image x:Name="image1" Width="151" VerticalAlignment="Top" Source="Image/ARiAParts/AriaLogo2.png" Margin="178,221,0,0" Height="51" HorizontalAlignment="Left" OpacityMask="Black"
+>
+			<Image.Effect>
+				<ee:BloomEffect BloomIntensity="1" BaseSaturation="1" BaseIntensity="1" Threshold="0"/>
+			</Image.Effect>
+		</Image>
+		<local:CPUCalcWindow x:Name="cPUCalcWindow" HorizontalAlignment="Left" VerticalAlignment="Top" Height="149" Width="150" Margin="14,24,0,0" RenderTransformOrigin="0.5,0.5">
+			<local:CPUCalcWindow.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</local:CPUCalcWindow.RenderTransform>
+		</local:CPUCalcWindow>
+		<TextBlock x:Name="UsernameTextBox" HorizontalAlignment="Left" Margin="190,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFB5DA36" Width="131.333" FontWeight="Bold" FontFamily="Utsaah" FontSize="16"><Run Language="ja-jp" Text="UserName:Negipoyoc"/></TextBlock>
+		<local:DateTimeUserControl HorizontalAlignment="Left" Margin="376,240,0,0" VerticalAlignment="Top"/>
+		<local:LANUpDownUserControl HorizontalAlignment="Left" Margin="376,53,0,0" VerticalAlignment="Top"/>
+		<local:ConfiglationUserControl x:Name="configlationUserControl" HorizontalAlignment="Left" Margin="79,350,0,0" VerticalAlignment="Top" Width="70" Height="70"/>
+		<Grid x:Name="ConfigGrid" HorizontalAlignment="Left" Height="162" Margin="169,172,0,0" VerticalAlignment="Top" Width="167.333" Opacity="0" Panel.ZIndex="-1">
+			<ed:Arc x:Name="ConfiglationUI" ArcThickness="100" ArcThicknessUnit="Pixel" EndAngle="360" Fill="Black" HorizontalAlignment="Left" Height="11.892" Margin="69.07,74.972,0,0" Stretch="None" Stroke="Black" StartAngle="0" VerticalAlignment="Top" Width="10.776" Opacity="0" RenderTransformOrigin="0.5,0.5">
+				<ed:Arc.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</ed:Arc.RenderTransform>
+			</ed:Arc>
+			<TextBox x:Name="UserNameInputTextBox" HorizontalAlignment="Left" Height="23" Margin="22.499,75.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="White" Background="Black" FontFamily="Aharoni"/>
+			<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="configuration" VerticalAlignment="Top" Margin="24.906,21.5,0,0" Foreground="White" FontFamily="Aharoni" FontSize="18.667"/>
+			<TextBlock HorizontalAlignment="Left" Margin="22.499,56,0,0" TextWrapping="Wrap" Text="Input YourName" VerticalAlignment="Top" FontFamily="Aharoni" FontSize="16" Foreground="White"/>
+			<Button x:Name="ConfigOKButton" Content="OK" HorizontalAlignment="Left" Margin="29.906,111.666,0,0" VerticalAlignment="Top" Width="44.5" Click="ConfigOKButton_Click">
+				<Button.Background>
+					<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+						<GradientStop Color="#FF55C707" Offset="0"/>
+						<GradientStop Color="#FF5CE000" Offset="0.5"/>
+						<GradientStop Color="#FF8CFF3D" Offset="0.297"/>
+						<GradientStop Color="#FF68FF00" Offset="1"/>
+					</LinearGradientBrush>
+				</Button.Background>
+			</Button>
+			<Button x:Name="ConfigCancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="88.906,111.666,0,0" VerticalAlignment="Top" Width="44.5">
+				<Button.Background>
+					<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+						<GradientStop Color="#FF55C707" Offset="0"/>
+						<GradientStop Color="#FF5CE000" Offset="0.5"/>
+						<GradientStop Color="#FF8CFF3D" Offset="0.297"/>
+						<GradientStop Color="#FF68FF00" Offset="1"/>
+					</LinearGradientBrush>
+				</Button.Background>
+			</Button>
+		</Grid>
+		<local:UserControl1 x:Name="userControl1" HorizontalAlignment="Left" Margin="50.5,50,0,50" RenderTransformOrigin="0.5,0.5" Opacity="0">
+			<local:UserControl1.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</local:UserControl1.RenderTransform>
+		</local:UserControl1>
+		<Image x:Name="image3" Margin="215.25,112.5,348.75,347.5" Source="Image/ARiAParts3/ARiAParts3.png" Stretch="Fill" Opacity="0" d:IsHidden="True" Visibility="Hidden" RenderTransformOrigin="0.5,0.5">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+		</Image>
+	</Grid>
+</Window>
